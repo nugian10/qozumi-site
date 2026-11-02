@@ -5,16 +5,13 @@
 <nav><a href="index.html">Home</a><a href="collection.html">Collection</a><a class="active" href="agent.html">Agent Mint</a></nav></div></header>
 <main class="wrap"><section><span class="pill">For Binance Agentic Wallets Only</span><h1>Agent Mint</h1><p class="lede">Copy this command and give it to the agent that controls your Binance Agentic Wallet. This website never connects a wallet, never asks for a private key or seed phrase, and cannot mint on your behalf.</p>
 <div class="notice" style="margin:16px 0"><b>Do not run this yet.</b> The contract address is still TBD because no QOZUMI contract has been deployed. The command below is ready to complete the moment a verified contract address is published.</div>
-<pre id="agentCommand">Mint 1 QOZUMI on BNB Smart Chain (Chain ID 56).
-
-Rules:
-- Price: 0.0003 BNB + gas; max 20 per wallet; supply 3,333
-- Wallet: my Binance Agentic Wallet with a SPACE ID Agent ID (.ai)
-- Contract: TBD — do not mint until a verified contract address is supplied
-- Minted QOZUMI go to the wallet that mints them
-- If the contract is not live or this wallet has no Agent ID, stop and tell me
-
-After minting, report the transaction hash, token ID, and remaining allowance.</pre>
+<pre id="agentCommand">Mint one QOZUMI on BNB Chain (chain id 56).
+Contract: TBD — do not mint until a verified contract address is supplied.
+Call mint(1).
+Value: read MINT_PRICE() on the contract and send exactly that amount, plus gas.
+Wallet: my Binance Agentic Wallet holding a SPACE ID Agent ID (.ai); minted QOZUMI go to this wallet.
+If the contract is not live or this wallet has no Agent ID, stop and tell me.
+After minting, report the transaction hash, token ID, and remaining allowance (max 20 per wallet).</pre>
 <button class="btn btn-primary" onclick="copyText('agentCommand',this)">Copy Agent Mint Command</button>
 <div class="card" style="margin-top:20px"><h2 style="font-size:22px">Check your wallet first</h2><p class="small">Paste a BNB Chain address. This page only checks the address format. Agent ID and remaining allowance will be read from the chain once the contract is live. No wallet is connected on this page.</p>
 <label for="walletInput">Binance Agentic Wallet address</label><input id="walletInput" type="text" placeholder="0x…" autocomplete="off">
