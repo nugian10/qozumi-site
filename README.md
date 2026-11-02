@@ -25,9 +25,9 @@ Static, mobile-first, English-only. No build step.
 - `collection.html` — Common, Rare, Epic, Legendary
 - `agent.html` — copyable Agent Mint command (contract TBD)
 - `css/style.css`, `js/config.js`, `js/app.js`
-- `images/` — character-only tier images cropped from the artwork
-  supplied for QOZUMI (no poster text, tier labels, pedestals, or
-  buttons; not a poster screenshot, not a generic AI artwork set)
+- `images/` — character-only tier images recreated from the reference
+  artwork supplied for QOZUMI (no poster text, tier labels, pedestals,
+  or buttons; not a poster screenshot)
 
 ## Run locally
 
