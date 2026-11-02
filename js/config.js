@@ -16,5 +16,5 @@ window.QOZUMI = {
   mintActive: false,
   mintMethod: "Agent only",
   agentRequirement: "Binance Agentic Wallet holding a SPACE ID Agent ID (.ai)",
-  artworkNote: "Hero and tier images are cropped from the artwork Bryan supplied for QOZUMI. No generic AI artwork set is used."
+  artworkNote: "Tier images are character-only crops from the artwork Bryan supplied for QOZUMI — no poster text, tier labels, pedestals, or buttons, and no poster screenshot. No generic AI artwork set is used."
 };
