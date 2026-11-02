@@ -13,21 +13,6 @@ function copyText(id, btn){
     const old=btn.textContent; btn.textContent="Copied ✓"; setTimeout(()=>btn.textContent=old,1800);
   });
 }
-function initCalc(){
-  const qtyEl=document.getElementById("qty"), totalEl=document.getElementById("totalBnb");
-  if(!qtyEl) return;
-  let qty=1;
-  const render=()=>{
-    qty=Math.max(1,Math.min(C.maxPerWallet,qty));
-    qtyEl.textContent=qty;
-    if(totalEl) totalEl.textContent=money(qty*C.mintPriceBNB)+" BNB";
-    const note=document.getElementById("qtyNote");
-    if(note) note.textContent=qty+" × "+C.mintPriceBNB.toFixed(4)+" BNB = "+money(qty*C.mintPriceBNB)+" BNB, plus network gas. Gas is separate.";
-  };
-  document.getElementById("qtyMinus")?.addEventListener("click",()=>{qty--;render();});
-  document.getElementById("qtyPlus")?.addEventListener("click",()=>{qty++;render();});
-  render();
-}
 function checkWallet(){
   const input=document.getElementById("walletInput"), out=document.getElementById("walletResult");
   if(!input||!out) return;
@@ -38,4 +23,4 @@ function checkWallet(){
     out.textContent="Enter a full BNB Chain address starting with 0x (42 characters). No wallet is connected on this page.";
   }
 }
-document.addEventListener("DOMContentLoaded",()=>{ fillSpecs(); initCalc(); });
+document.addEventListener("DOMContentLoaded",()=>{ fillSpecs(); });

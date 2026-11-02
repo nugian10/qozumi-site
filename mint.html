@@ -1,27 +1,14 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Mint QOZUMI — BNB Chain, Agent Only</title><meta name="description" content="Preview the QOZUMI mint: 0.0003 BNB each, maximum 20 per wallet, 3,333 supply, Binance Agentic Wallet only. Contract not deployed yet.">
+<title>Mint QOZUMI — Agent Mint Only</title><meta name="description" content="QOZUMI minting is agent-only on BNB Chain. This page redirects to the Agent Mint command.">
+<meta http-equiv="refresh" content="0; url=agent.html">
 <link rel="stylesheet" href="css/style.css"></head><body>
-<header><div class="wrap"><div class="topbar"><div class="logo">QO<span>ZUMI</span><small>MINT</small></div><a class="btn btn-primary" style="width:auto;padding:10px 16px" href="index.html">Home</a></div>
-<nav><a href="index.html">Home</a><a class="active" href="mint.html">Mint</a><a href="collection.html">Collection</a><a href="agent.html">Agent Mint</a></nav></div></header>
+<header><div class="wrap"><div class="topbar"><div class="logo">QO<span>ZUMI</span><small>AGENT MINT</small></div><a class="btn btn-primary" style="width:auto;padding:10px 16px" href="index.html">Home</a></div>
+<nav><a href="index.html">Home</a><a href="collection.html">Collection</a><a href="agent.html">Agent Mint</a></nav></div></header>
 <main class="wrap"><section>
-<span class="pill">Mint Preview · Contract Not Deployed</span><h1>Mint QOZUMI</h1><p class="lede">Small robots, minted by your agent. Choose a quantity, check the total, then use the Agent Mint command when the contract is live.</p>
-<div class="notice" style="margin:16px 0"><b>Mint is disabled for now.</b> There is no contract address to mint from. The calculator below is a preview only — it does not charge BNB and does not connect a wallet.</div>
-<div class="grid cols2">
-<div class="card calc"><h2 style="font-size:22px">How many?</h2>
-<div class="qty"><button id="qtyMinus" aria-label="Decrease quantity">−</button><output id="qty">1</output><button id="qtyPlus" aria-label="Increase quantity">+</button><span class="small">Max <span data-max>20</span> per wallet</span></div>
-<div class="total"><span>Price per QOZUMI</span><b><span data-price>0.0003</span> BNB</b></div>
-<div class="total"><span>Total (before gas)</span><b id="totalBnb">0.0003 BNB</b></div>
-<p class="small" id="qtyNote">1 × 0.0003 BNB = 0.0003 BNB, plus network gas. Gas is separate.</p>
-<p class="small">Minting 20 at once: 0.0060 BNB before gas. Full supply at this price would be 0.9999 BNB before gas (3,333 × 0.0003).</p>
-<button class="btn btn-primary" disabled>Mint Now — Not Active Yet</button>
-<p class="small">When live, the minted QOZUMI goes to the wallet that minted it, and the price goes to the collection's revenue wallet. Gas goes to validators.</p></div>
-<div class="card"><h2 style="font-size:22px">Check your wallet</h2><p class="small">Paste a BNB Chain address. This page only checks the address format. Agent ID and remaining allowance will be read from the chain once the contract is live.</p>
-<label for="walletInput">Binance Agentic Wallet address</label><input id="walletInput" type="text" placeholder="0x…" autocomplete="off">
-<div style="margin-top:12px"><button class="btn btn-ghost" onclick="checkWallet()">Check Address Format</button></div>
-<p class="small" id="walletResult" style="margin-top:12px"></p>
-<div class="grid cols2" style="margin-top:14px;grid-template-columns:1fr 1fr;gap:10px"><div class="tier-img"><img src="images/common.jpg" alt="QOZUMI Common robot"></div><div class="tier-img"><img src="images/legendary.jpg" alt="QOZUMI Legendary robot"></div></div></div>
-</div>
-<div class="btn-row"><a class="btn btn-gold" href="agent.html">Get the Agent Mint Command →</a><a class="btn btn-ghost" href="collection.html">See the Tiers</a></div>
+<span class="pill">Agent Only · BNB Chain</span><h1>Minting is agent-only.</h1>
+<p class="lede">There is no mint button on this website. QOZUMI can only be minted by the agent that controls a Binance Agentic Wallet holding a SPACE ID Agent ID (.ai).</p>
+<div class="notice" style="margin:16px 0"><b>You are being redirected to Agent Mint.</b> If the redirect does not work, use the button below.</div>
+<div class="btn-row"><a class="btn btn-gold" href="agent.html">Go to Agent Mint →</a><a class="btn btn-ghost" href="index.html">Back to Home</a></div>
 </section></main>
 <footer><div class="wrap"><b style="color:#fff">QOZUMI</b> · Planned: 3,333 supply · 0.0003 BNB per mint · Maximum 20 per wallet · BNB Chain 56 · No contract deployed yet.</div></footer>
-<script src="js/config.js"></script><script src="js/app.js"></script></body></html>
+</body></html>

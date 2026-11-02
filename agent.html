@@ -1,8 +1,8 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>QOZUMI Agent Mint — Binance Agentic Wallet</title><meta name="description" content="Agent Mint command for QOZUMI on BNB Chain: 0.0003 BNB each, maximum 20 per wallet, Binance Agentic Wallet with SPACE ID Agent ID. Contract not deployed yet.">
 <link rel="stylesheet" href="css/style.css"></head><body>
-<header><div class="wrap"><div class="topbar"><div class="logo">QO<span>ZUMI</span><small>AGENT MINT</small></div><a class="btn btn-primary" style="width:auto;padding:10px 16px" href="mint.html">Mint</a></div>
-<nav><a href="index.html">Home</a><a href="mint.html">Mint</a><a href="collection.html">Collection</a><a class="active" href="agent.html">Agent Mint</a></nav></div></header>
+<header><div class="wrap"><div class="topbar"><div class="logo">QO<span>ZUMI</span><small>AGENT MINT</small></div><a class="btn btn-primary" style="width:auto;padding:10px 16px" href="index.html">Home</a></div>
+<nav><a href="index.html">Home</a><a href="collection.html">Collection</a><a class="active" href="agent.html">Agent Mint</a></nav></div></header>
 <main class="wrap"><section><span class="pill">For Binance Agentic Wallets Only</span><h1>Agent Mint</h1><p class="lede">Copy this command and give it to the agent that controls your Binance Agentic Wallet. This website never connects a wallet, never asks for a private key or seed phrase, and cannot mint on your behalf.</p>
 <div class="notice" style="margin:16px 0"><b>Do not run this yet.</b> The contract address is still TBD because no QOZUMI contract has been deployed. The command below is ready to complete the moment a verified contract address is published.</div>
 <pre id="agentCommand">Mint QOZUMI for me on BNB Smart Chain (Chain ID 56).
@@ -20,11 +20,15 @@ Quantity: 1 (change only if I say so, and never above the 20-per-wallet limit or
 
 After minting, tell me the transaction hash, the token ID, and the remaining allowance for this wallet.</pre>
 <button class="btn btn-primary" onclick="copyText('agentCommand',this)">Copy Agent Mint Command</button>
+<div class="card" style="margin-top:20px"><h2 style="font-size:22px">Check your wallet first</h2><p class="small">Paste a BNB Chain address. This page only checks the address format. Agent ID and remaining allowance will be read from the chain once the contract is live. No wallet is connected on this page.</p>
+<label for="walletInput">Binance Agentic Wallet address</label><input id="walletInput" type="text" placeholder="0x…" autocomplete="off">
+<div style="margin-top:12px"><button class="btn btn-ghost" onclick="checkWallet()">Check Address Format</button></div>
+<p class="small" id="walletResult" style="margin-top:12px"></p></div>
 <div class="grid cols2" style="margin-top:20px">
 <div class="card"><b>Before you hand it over</b><p class="small">1. Confirm the contract address from the official QOZUMI site.<br>2. Confirm your Agentic Wallet holds a SPACE ID Agent ID.<br>3. Confirm the quantity is within your remaining allowance (maximum 20).</p></div>
 <div class="card"><b>Safety rules</b><p class="small">Never share a private key or seed phrase with any agent or website. A real mint shows the full total — price plus gas — in your wallet before you confirm. If the total looks different, stop.</p></div>
 </div>
-<div class="btn-row"><a class="btn btn-ghost" href="mint.html">Back to Mint Preview</a><a class="btn btn-ghost" href="index.html">Back to Home</a></div>
+<div class="btn-row"><a class="btn btn-ghost" href="index.html">Back to Home</a><a class="btn btn-ghost" href="collection.html">View Collection</a></div>
 </section></main>
 <footer><div class="wrap"><b style="color:#fff">QOZUMI</b> · Agent only · BNB Chain 56 · 0.0003 BNB · Maximum 20 per wallet · No contract deployed yet.</div></footer>
 <script src="js/config.js"></script><script src="js/app.js"></script></body></html>
